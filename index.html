@@ -1,17 +1,742 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel = "stylesheet" href = "styles.css"/>
-</head>
-<body>
 
-    <Div>
-        Hello
-    </Div>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Epitome</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- site header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.svg" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Home</a></li>
+                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                <!--<li><a class="smoothscroll" href="#services" title="services">Education</a></li> -->
+                <li><a class="smoothscroll" href="#works" title="works">Projects</a></li>
+                <li><a class="smoothscroll" href="#contact" title="contact us">Contact</a></li>	
+            </ul>
+
+            <ul class="header-social">
+                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+
+        <div class="row intro-content">
+
+            <div class="column large-9 mob-full intro-text">
+                <h3>Hello, I'm Jianwei Chen</h3>
+                <h1>
+                    Welcome to <br>
+                    my website :)
+                </h1>
+            </div>
+
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scroll-link smoothscroll">
+                    Scroll For More
+                </a>
+            </div>
+
+            <div class="intro-grid"></div>
+            <div class="intro-pic"></div>
+
+        </div> <!-- end row -->
+
+    </section> <!-- end intro -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="about-me">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">About Me</h2>
+                </div>
+            </div>
+
+            <div class="row about-me__content" data-aos="fade-up">
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+                        Hello, I am a sophomore at The Jonhs Hopkins University Whiting School of Engineering. I currently have
+                        three majors: Computer Science, Applied Mathematics and Statistics, and Economics.
+                    </p>
+
+                    <p>
+                        Currently, <strong>I am looking for software engineering/data science/analytical opportunities.</strong> If you think
+                        I am a good fit or interested in hiring me, please contact me at <strong>jianwei.matthew.chen@gmail.com.</strong>
+                    </p>
+                    <p>
+                        I'm an adaptable independent teamworker, strong in coding and applied mathematics. Below are highlights of my techinical
+                        skills:
+                    </p>
+                </div>
+            </div>
     
+            <div class="row about-me__buttons">
+                <!--
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="#0" class="btn btn--stroke full-width">Hire Me</a>
+                </div>
+                -->
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <a href="#0" class="btn btn--primary full-width">Download CV</a>
+                </div>
+            </div>
+
+        </div> <!-- end about-me -->
+
+        <div class="about-experience">
+
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">Research and Education</h2>
+                </div>
+            </div>
+
+            
+
+            <div class="row about-experience__timeline">
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--work"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">January 2022 - May 2022</p>
+                                <h3 class="item-title">The Johns Hopkins University</h3>
+                                <h5>Research Assistant</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>
+                                    Performed fixed effect regression modelling to discover correlations between race groups and behaviors/activites in college seniors.
+                                    Created coefficient graphs and summary tables to summarize results into readable formats.
+                                    Cleaned up and edited extensive public survey data in order to make the data workable for regression and further analysis.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">November 2020 - January 2021</p>
+                                <h3 class="item-title">Emory University Department of Oncology</h3>
+                                <h5>Research Assistant</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>
+                                    Compiled public data regarding individuals with the FAT1 mutation along with head and neck cancer.
+                                    Analyzed public patient data to discover genes correlated with head and neck cancer.
+                                    Created data visualizations demonstrating the relationship between gene mutations and head/neck cancer rates.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">May 2019 - July 2020</p>
+                                <h3 class="item-title">Georgia Institute of Technology Combustion Lab</h3>
+                                <h5>Research Assistant</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>
+                                    Investigated the stability of the rocket flame fueled by ammonia and supplemented by plasma energy.
+                                    Modeled relations between plasma and the resulting frequency.
+                                    Advanced Integrity of Testing Lab to prevent hazardous conditions.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="column large-half tab-full" data-aos="fade-up">
+                    <div class="timeline">
+
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline__icon--education"></span>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">August 2021 - May 2025</p>
+                                <h3 class="item-title">The Johns Hopkins University</h3>
+                                <h5>Bachelors Degree of Science</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>
+                                    GPA: 3.86 <br>
+                                    Majors: Computer Science, Applied Mathematics and Statistics, and Economics <br>
+                                    <br>
+                                    Relevant Courses Taken: <br>
+                                    Gateway Computing: Java, Introduction to Data Science, Professional Writing and Communication,
+                                     Elements of Macroeconomics, Calculus I-III, Linear Algebra, Differential Equations, Data Structures,
+                                      Intermediate Programming <br>
+
+
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">August 2017 - May 2021</p>
+                                <h3 class="item-title">The Gwinnett School of Mathematics, Science, and Technology</h3>
+                                <h5>High School Diploma</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>
+                                    GPA: 4.0 <br>
+                                    ACT: 36 <br>
+                                    SAT: 1560 <br>
+                                    Part of the VEX Robotics Team 675A, team leader and head coder. Received the state robotics design, excellence, and 
+                                    interview awards for the Vex robotics state competition. Received the Vex Worlds Robotics Competition Qualifier for the 2018-2019 year. <br>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- end about-experience -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <!--
+    <section id="services" class="s-services ss-dark target-section">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Capabilities</h2>
+
+                <p class="section-desc">
+                    My passion and goal is to help you make your business standout.
+                </p>
+            </div>
+        </div> 
+    -->
+        <!-- end heading-block -->
+
+        <!--
+        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Brand Identity</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Illustration</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Web Design</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Product Strategy</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">UI/UX Design</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Mobile Design</h4>
+                    <p>
+                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
+                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+        </div> 
+    -->
+        <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- CTA
+    ================================================== -->
+    <!--
+    <section class="s-cta ss-dark">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-desc">
+                    Need a great reliable web hosting?
+                </h2>
+            </div>
+        </div> 
+    -->
+        <!-- end heading-block -->
+
+        <!--
+        <div class="row cta-content" data-aos="fade-up">
+            <div class="column large-full">
+                <p>
+                We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
+                Powerful web and Wordpress hosting. Guaranteed.
+                Starting at $2.95 per month.
+                </p>
+
+                <a href="https://www.dreamhost.com/r.cgi?287326" class="btn full-width">Get Started</a>
+            </div>
+        </div> 
+    -->
+    <!-- end ad-content -->
+    </section>
+
+     <!-- end s-cta -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">My Projects</h2>
+                <p class="section-desc">
+                    Here are some of my selected works I have done lately. Feel free to 
+                    check them out.
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="masonry-wrap">
+
+            <div class="masonry">
+                <div class="grid-sizer"></div>
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="/images/mine/pathfinding.png" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                                <img src="/images/mine/pathfinding.png" alt="">
+                            </a>    
+                            <a href="https://jchen362.github.io/pathfinding/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+    
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Pathfinding Visualizer
+                            </h4>
+                            <p class="item-folio__cat">
+                                Javascript, React, HTML, CSS
+                            </p>
+                        </div>
+    
+                        <div class="item-folio__caption">
+                            <p>This project visualizes how BFS, DFS, and Dijistras explore graph nodes in order to find shortest path.
+                                Diijistras pays attention to the weighted parts of the graph you add in while BFS and DFS don't. Feel free
+                                to try out the project by clicking on the project link.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="/images/mine/battleroyale2.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                                <img src="/images/mine/battleroyale2.png" alt="">
+                            </a>
+                            <a href="https://jchen362.github.io/zombslikebattleroyale/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Multiplayer Battle Royale Game
+                            </h4>
+                            <p class="item-folio__cat">
+                                Javascript, HTML, CSS, Firebase
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="/images/mine/ARLab.png" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                <img src="/images/mine/ARLab.png" alt="">
+                            </a>
+                            <a href="https://www.notion.so/quest2learn/Setting-up-Quest2Learn-1fa034552f6c4edab10e2b9a1deda24a" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Augmented Reality Educational Chemistry Labs
+                            </h4>
+                            <p class="item-folio__cat">
+                                Unity, C
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">
+                                <img src="images/portfolio/shutterbug.jpg" 
+                                     srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Easily Embeddable Website Bugtracker Software
+                            </h4>
+                            <p class="item-folio__cat">
+                                HTML, Typescript, Javscript, CSS, MongoDB, React
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/portfolio/gallery/g-lamp.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">
+                                <img src="images/portfolio/lamp.jpg" alt="">
+                            </a>
+                            <a href="https://github.com/jhu-ip/2022-spring-final-npark11-jchen362-mkim225" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Chess Game
+                            </h4>
+                            <p class="item-folio__cat">
+                                C++
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+        
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="/images/mine/d3.gif" class="thumb-link" title="Palmeira" data-size="1050x700">
+                                <img src="/images/mine/d3.gif" width = "400" height = "400" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Image Size Extender Algorithm
+                            </h4>
+                            <p class="item-folio__cat">
+                                C
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+            </div> <!-- end masonry -->
+
+        </div> <!-- end masonry-wrap -->
+
+    </section> <!-- end s-work -->
+
+
+    <!-- testimonies
+    ================================================== -->
+    <!--
+    <section class="s-testimonials">
+    
+        <div class="row testimonials" data-aos="fade-up">
+
+            <div class="column large-full testimonials__slider">
+
+                <div class="testimonials__slide">
+                    <p>Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
+                    Laudantium quia consequatur molestias delectus culpa.</p>
+                    <div class="testimonials__info">
+                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Tim Cook</strong>
+                            <span>CEO, Apple</span>
+                        </cite>
+                    </div>
+                </div> 
+            -->
+                <!-- end testimonials__slide -->
+
+                <!--
+                <div class="testimonials__slide">
+                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                        Quasi voluptas eius distinctio. Atque eos maxime.</p>
+                    <div class="testimonials__info">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Sundar Pichai</strong>
+                            <span>CEO, Google</span>
+                        </cite>
+                    </div>
+                </div> 
+            -->
+                <!-- end testimonials__slide -->
+
+                <!--
+                <div class="testimonials__slide">
+                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                    Voluptatem dignissimos ut.</p>
+                    <div class="testimonials__info">
+                        <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonials__avatar">
+                        <cite class="testimonials__cite">
+                            <strong>Satya Nadella</strong>
+                            <span>CEO, Microsoft</span>
+                        </cite>
+                    </div>
+                </div> 
+            -->
+                <!-- end testimonials__slide -->
+                
+            </div> <!-- end testimonials__slider -->
+
+        </div> <!-- end testimonials -->
+
+    </section> <!-- end s-testimonials -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact ss-dark target-section">
+
+        <div class="row heading-block" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading">Contact</h2>
+            </div>
+        </div>
+
+        <div class="row contact-main" data-aos="fade-up">
+            <div class="column large-full">
+                <p class="contact-email">
+                    <a href="mailto:#0">jianwei.matthew.chen@gmail.com</a>
+                </p>
+
+                <p class="section-desc">
+                I'm happy to connect, listen and help. Let's work together and build
+                something awesome. Let's turn your idea to an even greater product.
+                <a href="mailto:#0">Email Me</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+
+            <div class="column large-5 medium-full contact-phone">
+                <h4>Call Me</h4>
+                <a href="tel:197-543-2345">404-723-2759</a>
+            </div>
+
+            <!--
+            <div class="column large-7 medium-full contact-social">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="#0" title="Facebook">Facebook</a></li>
+                    <li><a href="#0" title="Twitter">Twitter</a></li>
+                    <li><a href="#0" title="Instagram">Instagram</a></li>
+                </ul>
+            </div>
+        -->
+
+        </div> <!-- end contact-infos -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Epitome 2019</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>            
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
-</html>
