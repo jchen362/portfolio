@@ -1,4 +1,4 @@
-webiste link: https://jchen362.github.io/portfolio/
+<a href="https://jchen362.github.io/portfolio/" target="_blank">Website Link</a>
 
 
 ==================================================================================================
